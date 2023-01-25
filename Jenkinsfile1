@@ -39,9 +39,7 @@ pipeline{
         }
         success{
             echo "========pipeline executed successfully ========"
-            emailext body: '''Dear Umar,
-
-This email is to confirm that production server has been successfully updated.''', subject: 'jenkins alert', to: 'umar.amjad@grp.contegris.com'
+           
              }
         failure{
             echo "========pipeline execution failed========"
